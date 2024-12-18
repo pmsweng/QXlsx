@@ -1,0 +1,114 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 199,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 206,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 221,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "devel",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libQXlsxQt6.a"
+			],
+			"targetId" : "QXlsx::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "devel",
+			"destination" : "include/QXlsxQt6",
+			"paths" : 
+			[
+				"header/xlsxabstractooxmlfile.h",
+				"header/xlsxabstractsheet.h",
+				"header/xlsxabstractsheet_p.h",
+				"header/xlsxcellformula.h",
+				"header/xlsxcell.h",
+				"header/xlsxcelllocation.h",
+				"header/xlsxcellrange.h",
+				"header/xlsxcellreference.h",
+				"header/xlsxchart.h",
+				"header/xlsxchartsheet.h",
+				"header/xlsxconditionalformatting.h",
+				"header/xlsxdatavalidation.h",
+				"header/xlsxdatetype.h",
+				"header/xlsxdocument.h",
+				"header/xlsxformat.h",
+				"header/xlsxglobal.h",
+				"header/xlsxrichstring.h",
+				"header/xlsxworkbook.h",
+				"header/xlsxworksheet.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "devel",
+			"destination" : "lib/cmake/QXlsxQt6",
+			"exportName" : "QXlsxQt6Targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "QXlsx::@6890427a1f51a3e7e1df",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/lib/cmake/QXlsxQt6/QXlsxQt6Targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/QXlsxQt6",
+			"paths" : 
+			[
+				"/workspaces/QXlsx/build/QXlsxQt6Config.cmake",
+				"/workspaces/QXlsx/build/QXlsxQt6ConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

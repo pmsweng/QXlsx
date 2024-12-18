@@ -13,6 +13,18 @@ set(CMAKE_AUTOMOC ON)
 
 include(GNUInstallDirs)
 
+#static code analysis
+find_program(CLANG_TIDY NAMES clang-tidy)
+if (CLANG_TIDY)
+    message("Found clang-tidy: ${CLANG_TIDY}")
+    set(CMAKE_CXX_CLANG_TIDY
+        clang-tidy;
+        -checks=-cppcoreguidelines-*;
+        -warnings-as-errors=*;)
+else()
+    message("clang-tidy not found!")
+endif()
+
 if(NOT DEFINED QT_VERSION_MAJOR)
     find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Gui REQUIRED)
 endif()
