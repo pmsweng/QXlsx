@@ -22,7 +22,7 @@ RUN add-apt-repository ppa:kisak/kisak-mesa
 
 # Install additional packages.
 RUN apt update && export DEBIAN_FRONTEND=noninteractive \
-    && apt -y install --no-install-recommends qt6-base-dev libglx-dev libgl1-mesa-dev \
+    && apt -y install --no-install-recommends qt6-base-dev libglx-dev libgl1-mesa-dev qt6-base-private-dev \
     clang-format clang-tidy\
     doxygen graphviz \
     lcov gnumeric libxkbcommon-x11-dev
